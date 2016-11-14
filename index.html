@@ -27,7 +27,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
 </head>
 
 <body>
@@ -131,6 +131,16 @@
                     <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
                 </div>
                 <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Failure is not an option
+                        </h2>
+                        <div id="container" style="width:100%; height:400px;"></div>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
+                </div>
+                <hr>
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="next">
@@ -192,6 +202,38 @@
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+
+    <!-- JavaScript Inclusion -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- HighCharts -->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script>
+      $(function () { 
+          var myChart = Highcharts.chart('container', {
+              chart: {
+                  type: 'bar'
+              },
+              title: {
+                  text: 'Willpower Consumption'
+              },
+              xAxis: {
+                  categories: ['CSS', 'HTML', 'JavaScript','Rails']
+              },
+              yAxis: {
+                  title: {
+                      text: 'Willpower Drained'
+                  }
+              },
+              series: [{
+                  name: 'Jane',
+                  data: [1, 0, 4,2]
+              }, {
+                  name: 'John',
+                  data: [7, 7, 3, 1]
+              }]
+          });
+      });
+    </script>
 
 </body>
 
