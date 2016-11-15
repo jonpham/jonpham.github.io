@@ -1,0 +1,8 @@
+#page_nav {
+  text-align: center;
+  font-size : 1.25em;
+}
+#page_nav li {
+  display: inline;
+  padding: 10px;
+}
